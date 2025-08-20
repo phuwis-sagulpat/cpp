@@ -1,0 +1,33 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    float weight;
+    float height;
+    float bmi;
+    std::cout << "Enter your weight (in kilograms): ";
+    std::cin >> weight;
+
+    std::cout << "Enter your height (in meters): ";
+    std::cin >> height;
+        // For metric system:
+    bmi = weight / (height * height); // Or bmi = weight / pow(height, 2);
+
+    // For imperial system:
+    // bmi = (weight * 703) / (height * height);
+    
+    if (bmi<18){
+        cout<<bmi<<"Your BMI is low ! You skinny ass";
+       
+    }else if (bmi<24){
+        cout<<bmi<<"You are is FAT ASS !";
+    }else if (18<bmi<24){
+        cout<<bmi<<"You is GIGACHAD !";
+    }else if (bmi==20){
+        cout<<bmi<<"You is SIGMA MALE ARE YOU SINGLE :p !";
+    } else {
+        std::cout << "You are obese." << std::endl;
+    }
+    return 0;
+}
