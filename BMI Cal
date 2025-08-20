@@ -18,15 +18,12 @@ int main(){
     // For imperial system:
     // bmi = (weight * 703) / (height * height);
     
-    if (bmi<18){
+    if (bmi<18.5){
         cout<<bmi<<"Your BMI is low ! You skinny ass";
-       
-    }else if (bmi<24){
+    }else if (bmi >= 18.5 && bmi < 24.9){
         cout<<bmi<<"You are is FAT ASS !";
-    }else if (18<bmi<24){
+    }else if (bmi >= 25 && bmi < 29.9){
         cout<<bmi<<"You is GIGACHAD !";
-    }else if (bmi==20){
-        cout<<bmi<<"You is SIGMA MALE ARE YOU SINGLE :p !";
     } else {
         std::cout << "You are obese." << std::endl;
     }
