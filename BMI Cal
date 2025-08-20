@@ -9,9 +9,10 @@ int main(){
     std::cout << "Enter your weight (in kilograms): ";
     std::cin >> weight;
 
-    std::cout << "Enter your height (in meters): ";
+    std::cout << "Enter your height (in cm): ";
     std::cin >> height;
         // For metric system:
+        height = height/100;
     bmi = weight / (height * height); // Or bmi = weight / pow(height, 2);
 
     // For imperial system:
